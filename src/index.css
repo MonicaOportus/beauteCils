@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.myNav {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.myButton {
+  background-color: white;
+  border: 2px solid white;
+  padding: 15px 35px;
+}
+
+.myButton:hover {
+  background: transparent;
+  color: white
+}
+
+.contactButton {
+  padding: 15px 35px;
+  background: black;
+  color: white;
+  border: 2px solid black;
+  margin-top: 15px;
+}
+
+.contactButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.contactInput {
+  border: 1px #DDDDDD solid;
+  font-family: "Raleway";
+  font-size: 11px;
+  letter-spacing: 2px;
+  width: 400px;
+  margin-top: 15px;
+  padding: 15px
+}
+
+.contactInput::placeholder {
+  text-transform: uppercase;
+}
+
+.contactInput:hover {
+  border: 1px solid gray;
+}
+
+@media (max-width: 470px) {
+  .contactInput {
+    width: 300px;
+  }
+
+  .contactButton {
+    width: 300px;
+  }
+}
+
+.subtitle {
+    -webkit-font-smoothing: antialiased;
+}
+
+@layer components {.navItem {
+  @apply hover:bg-[#f6f6f6] px-4 py-2
+  }
 }
