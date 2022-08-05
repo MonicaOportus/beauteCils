@@ -14,14 +14,13 @@ function Home() {
                     className="object-cover h-80 md:h-96 w-full"
                 />
                 <h6 
-                    className="left-6 top-52 md:top-80 font-[Raleway] uppercase
-                    tracking-widest text-[30px] text-center pt-10 pb-7"
+                    className="title pt-24 px-6 md:top-80
+                     text-[40px] text-center pb-5 tracking-widest"
                 >
-                    Eyelash Extensions
+                    EYELASH EXTENSIONS
                 </h6>
-                <p className="text-center font-[Montserrat] px-8 md:px-16 lg:px-52 text-lg lg:text-xl">
-                Beauté Cils offers long-lasting eyelash extensions, while maintaining the health of your natural lashes.
-                Our eyelash extensions vary from natural to voluminous. The choice is yours!
+                <p className="raleway text-center px-8 md:px-16 text-[20px] md:text-[25px] tracking-wider">
+                    Lash Beauty's priority is to provide quality eyelash extensions that suit your preferences and enhance your natural beauty.
                 </p>
             </div>
             <LashExtensions/>

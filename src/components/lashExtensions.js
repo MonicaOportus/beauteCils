@@ -1,5 +1,5 @@
-import lash1 from "../images/lash1.png";
-import lash2 from "../images/lash2.png";
+import lash1 from "../images/lash1.jpg";
+import lash2 from "../images/lash2.jpg";
 import lash3 from "../images/lash3.jpg";
 
 function LashExtensions() {
@@ -16,8 +16,8 @@ function LashExtensions() {
                     />
                      <div className="absolute bottom-10 left-10">
                         <h1 
-                            className="text-white pb-5 text-[20px] 
-                            font-[Raleway] uppercase tracking-[0.3em]"
+                            className="text-[#16313D] pb-5 text-[40px] 
+                            title font-semibold"
                         >
                             Classic
                         </h1>
@@ -26,61 +26,58 @@ function LashExtensions() {
                             target="_blank"
                         >
                             <button 
-                                className="myButton font-[Raleway] uppercase 
-                                tracking-[0.3em] text-[12px]"
+                                className="myButton raleway text-[14px]"
                             >
                                 Book now
                             </button>
                         </a>
                     </div>
                 </div>
-                <div className="relative">
+                <div className="relative bg-gray-400">
                     <img 
                         src={lash2} 
                         alt="lashes"
-                        className="h-[470px] lg:h-[540px] w-full object-cover"
+                        className="h-[470px] lg:h-[540px] w-full object-cover grayscale opacity-50"
                     />
                     <div className="absolute bottom-10 left-10">
                         <h1 
-                            className="text-white pb-5 text-[20px] 
-                            font-[Raleway] uppercase tracking-[0.3em]">
+                            className="text-[#16313D] pb-5 
+                            title text-[40px] font-semibold">
                             Volume
                         </h1>
                         <a
-                            href="https://squareup.com/appointments/book/5sv8sknhsct21f/LKPZ691GW0XM9/start"
-                            target="_blank"
+                            // href="https://squareup.com/appointments/book/5sv8sknhsct21f/LKPZ691GW0XM9/start"
+                            // target="_blank"
                         >
                             <button 
-                                className="myButton font-[Raleway] uppercase 
-                                tracking-[0.3em] text-[12px]"
+                                className="disabledButton raleway text-[14px]"
                             >
-                                Book now
+                                Coming soon
                             </button>
                         </a>
                     </div>
                 </div>
-                <div className="relative">
+                <div className="relative bg-gray-400">
                     <img 
                         src={lash3} 
                         alt="lashes"
-                        className="h-[470px] lg:h-[540px] w-full object-cover"
+                        className="h-[470px] lg:h-[540px] w-full object-cover grayscale opacity-50"
                     />
                     <div className="absolute bottom-10 left-10">
                         <h1 
-                            className="text-white text-[20px] pb-5 
-                            font-[Raleway] uppercase tracking-[0.3em]"
+                            className="text-[#16313D] text-[40px] font-semibold pb-5 
+                            title"
                         >
                             Refill
                         </h1>
                         <a 
-                            href="https://squareup.com/appointments/book/5sv8sknhsct21f/LKPZ691GW0XM9/start" 
-                            target="_blank"
+                            // href="https://squareup.com/appointments/book/5sv8sknhsct21f/LKPZ691GW0XM9/start" 
+                            // target="_blank"
                         >
                             <button 
-                                className="myButton font-[Raleway] uppercase 
-                                tracking-[0.3em] text-[12px]"
+                                className="disabledButton raleway text-[14px]"
                             >
-                                Book now
+                                Coming soon
                             </button>
                         </a>
                     </div>

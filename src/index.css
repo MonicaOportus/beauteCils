@@ -2,51 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #0E1F27;
+  color: #EBCCA4;
+}
+
+.title {
+  font-family: "Cormorant Garamond";
+}
+
+.raleway {
+  font-family: "Raleway";
+}
+
+.myHover:hover {
+  background-color: #20495B;
+}
 
 .myNav {
   -webkit-font-smoothing: antialiased;
 }
 
 .myButton {
-  background-color: white;
-  border: 2px solid white;
+  background-color: #16313D;
+  border: 2px solid #16313D;
   padding: 15px 35px;
+  letter-spacing: 2px;
+}
+
+.disabledButton {
+  background-color: #16313D;
+  border: 2px solid #16313D;
+  opacity: 70%;
+  padding: 15px 35px;
+  letter-spacing: 2px;
 }
 
 .myButton:hover {
   background: transparent;
-  color: white
+  color: #16313D;
 }
 
 .contactButton {
   padding: 15px 35px;
-  background: black;
-  color: white;
-  border: 2px solid black;
+  background: #EBCCA4;
+  color: black;
+  border: 1px solid #EBCCA4;
   margin-top: 15px;
 }
 
 .contactButton:hover {
-  background-color: white;
-  color: black;
+  background-color: #16313D;
+  color: #EBCCA4;
 }
 
 .contactInput {
-  border: 1px #DDDDDD solid;
+  border: 1px gray solid;
   font-family: "Raleway";
   font-size: 11px;
   letter-spacing: 2px;
   width: 400px;
   margin-top: 15px;
-  padding: 15px
+  padding: 15px;
+  background-color: #16313D;
 }
 
 .contactInput::placeholder {
-  text-transform: uppercase;
+  font-family: "Raleway";
 }
 
 .contactInput:hover {
-  border: 1px solid gray;
+  border: 1px solid #EBCCA4;
 }
 
 @media (max-width: 470px) {
@@ -64,6 +90,6 @@
 }
 
 @layer components {.navItem {
-  @apply hover:bg-[#f6f6f6] px-4 py-2
+  @apply hover:bg-[#20495B] px-4 py-2
   }
 }

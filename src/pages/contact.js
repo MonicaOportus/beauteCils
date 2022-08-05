@@ -17,10 +17,10 @@ export const Contact = () => {
     if (missingFields) return;
     emailjs
       .sendForm(
-        "service_98b9c4t",
-        "template_pb98cop",
+        "service_bc7rzxq",
+        "template_dovhgmc",
         form.current,
-        "jSU9FxtPXd2reRFEh"
+        "Sve8Hq3juMXwYMoAs"
       )
       .then(
         (result) => {
@@ -46,7 +46,7 @@ export const Contact = () => {
         <div className="flex justify-center pt-16 pb-36">
             <div>
             <h1
-                className="font-[Raleway] uppercase subtitle
+                className="title uppercase subtitle
                 tracking-widest text-[30px] text-center pt-2 pb-7"
             >
                 Contact me
@@ -90,7 +90,7 @@ export const Contact = () => {
                     </Alert>
                     )}
                     <button
-                        className="contactButton font-[Raleway] uppercase 
+                        className="contactButton raleway uppercase 
                         tracking-[0.3em] text-[12px] w-[400px]"
                         type="submit"
                         value="Send"

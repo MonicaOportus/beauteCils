@@ -7,16 +7,15 @@ function Navbar () {
       return (
         <Menu>
             <div className="absolute md:hidden">
-                <Menu.Button><i class="fa-solid fa-2xl fa-bars flex-col px-3 py-6 ml-5 mt-2 rounded-full hover:bg-[#f6f6f6]"></i></Menu.Button>
-                <Menu.Items className="list-none font-[Raleway] uppercase bg-white
-                            text-sm text-black tracking-widest flex flex-col">
+                <Menu.Button><i class="fa-solid fa-2xl fa-bars flex-col px-3 py-6 ml-5 mt-2 rounded-full myHover"></i></Menu.Button>
+                <Menu.Items className="list-none raleway bg-[#0E1F27] text-sm text-[#EBCCA4] tracking-widest flex flex-col">
                     <Menu.Item className="py-4 navItem">
                     {({ active }) => (
                         <a
                         className={`${active}`}
                         href="/#lashextensions"
                         >
-                        lash extensions
+                        LASH EXTENSIONS
                         </a>
                     )}
                     </Menu.Item>
@@ -25,9 +24,9 @@ function Navbar () {
                         <a
                         className={`${active}`}
                         target="_blank"
-                        href="https://squareup.com/appointments/book/5sv8sknhsct21f/LKPZ691GW0XM9/start"
+                        href="https://squareup.com/appointments/book/zoaydukjzatyuh/LJKRK6Q7FWDB7/start"
                         >
-                        Booking
+                        BOOKING
                         </a>
                     )}
                     </Menu.Item>
@@ -37,7 +36,7 @@ function Navbar () {
                         className={`${active}`}
                         href="/contact"
                         >
-                        Contact
+                        CONTACT
                         </a>
                     )}
                     </Menu.Item>
@@ -47,7 +46,7 @@ function Navbar () {
                         className={`${active}`}
                         href="/map"
                         >
-                        Location
+                        LOCATION
                         </a>
                     )}
                     </Menu.Item>
@@ -58,45 +57,45 @@ function Navbar () {
     }
 
     return (
-        <div className="pb-5">
+        <div className="pb-5 bg-[#16313D]">
             <div className="mx-auto pt-6 items-center">
                 <MyDropdown/>
                 <a href="/">
                     <img 
                         src={logo} 
                         alt="logo" 
-                        className="w-56 md:w-72 object-contain mx-auto"
+                        className="w-48 md:w-60 object-contain mx-auto"
                     />
                 </a>
             </div>
 
             <div class="hidden md:flex items-center justify-center pt-7 sticky">
-                <div class="w-16 border-t border-gray-400"></div>
+                <div class="w-16 border-t border-[#EBCCA4]"></div>
                 <span 
-                    className="myNav flex-shrink mx-4 flex list-none font-[Raleway] uppercase 
-                    text-sm tracking-widest lg:tracking-[0.3em] text-black">
+                    className="myNav flex-shrink mx-4 flex list-none raleway 
+                    text-sm tracking-widest lg:tracking-[0.3em] text-[#EBCCA4]">
                     <a href="/#lashExtensions">
                         <li className="navItem">
-                            lash extensions
+                            LASH EXTENSIONS
                         </li>
                     </a>
-                    <a href="https://squareup.com/appointments/book/5sv8sknhsct21f/LKPZ691GW0XM9/start" target="_blank">
+                    <a href="https://squareup.com/appointments/book/zoaydukjzatyuh/LJKRK6Q7FWDB7/start" target="_blank">
                         <li className="navItem">
-                            Booking
+                            BOOKING
                         </li>
                     </a>
                     <a href="/contact">
                         <li className="navItem">
-                            Contact
+                            CONTACT
                         </li>
                     </a>
                     <a href="/map">
                         <li className="navItem">
-                            Location
+                            LOCATION
                         </li>
                     </a>
                 </span>
-                <div class="w-16 border-t border-gray-400"></div>
+                <div class="w-16 border-t border-[#EBCCA4]"></div>
             </div>
         </div>
     );
